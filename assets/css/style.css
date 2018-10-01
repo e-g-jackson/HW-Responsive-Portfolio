@@ -1,0 +1,313 @@
+body{
+    color:#777777;
+    background-color:#cccccc;
+    font-family: helvetica;
+    min-height:800px;
+    padding-bottom:80px;
+}
+
+h1{
+    font-size: 30px;
+    color: #4aaaa5;
+    border-bottom: solid #cccccc;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 19px;
+}
+
+footer{
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    height: 25px;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    border-top: solid 5px #4aaaa5;
+    bottom: 0px;
+    z-index:5;
+}
+
+button{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding:15px 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+table{
+    border-spacing:80px 0px;
+    border-collapse:separate;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.headerbar{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    border-bottom: solid #cccccc 5px;
+    width: 100%;
+    z-index:5;
+}
+
+.nameplate{
+    background-color:#4aaaa5;
+    color:#ffffff;
+    font-size: 25px;
+    position: relative;
+    float: left;
+    height: inherit;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:20%;
+    z-index:inherit;
+}
+
+.nav{
+    float: right;
+    display: table;
+    position: fixed;
+    right: 20%;
+}
+
+.contentbody{
+    background-color: #ffffff;
+    border: solid 1px #777777;
+    width:960px;
+    padding: 10px;
+    margin-bottom:60px;
+    position: absolute;
+    top: 85px;
+    left: 20%;
+    right: 50%;
+}
+
+.Table_Wrapper{
+    position: block;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+}
+
+.table-r{
+    float:right;
+    width:40%;
+    margin-right: 5%;
+    margin-left: 2.5%;
+}
+
+.table-l{
+    float:left;
+    width:40%;
+    margin-right: 2.5%;
+    margin-left: 5%;
+}
+
+.Portfolio_Label{
+    background-color:#4aaaa5;
+    color: #ffffff;
+    height:60px;
+    width:inherit;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    bottom:80px;
+    z-index:2;
+}
+
+.Portfolio_Pic{
+    position: relative;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width: inherit;
+    height: auto;
+    
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#profpic{
+    border:solid #777777 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+    clear: both;
+    height: 25%;
+    width: 25%;
+    float: left;
+}
+
+a:link{
+    color: #cccccc
+}
+a:visited{
+    color: #800080;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: #ff0000;
+}
+
+@media( max-width: 980px ){
+    body{
+        max-width: 980px;
+    }
+    header{
+        width: 100%;
+        position:static;
+    }
+    .contentbody{
+        position: absolute;
+        width:60%;
+        left: 10%;
+        padding-top: 30px;
+    }
+
+    .nameplate{
+        position: relative;
+        top: 0px;
+        left:10%;
+        right: 25%;
+        float: left;
+    }
+    #profpic{
+        width: 33.33%;
+    }
+    input{
+        align: center;
+        width: 90%;
+    }
+
+    textarea{
+        align: center;
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    body{
+        max-width: 768px;
+    }
+    header{
+        width: 100%;
+        position:static;
+    }
+    .contentbody{
+        position: absolute;
+        width:90%;
+        left: 5%;
+        padding-top: 30px;
+    }
+
+    .nameplate{
+        position: absolute;
+        top: 0px;
+        left:5%;
+        right: 25%;
+    }
+    #profpic{
+        width: 45%;
+    }
+    input{
+        align: center;
+        width: 90%;
+    }
+
+    textarea{
+        align: center;
+        width: 90%;
+    }
+}
+
+
+
+@media(max-width: 600px){
+    body{
+        max-width: 600px;
+    }
+    header{
+        position: static;
+    }
+    
+    input{
+        align: center;
+        width: 90%;
+    }
+
+    textarea{
+        align: center;
+        width: 90%;
+    }
+
+    .contentbody{
+        width: 90%;
+        position: relative;
+        left: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 90px;
+    }
+    .nameplate{
+        position: relative;
+        width: 100%;
+        text-align : center;
+        left: 0%;
+        right: 0%;
+    }
+
+    .nav{
+        position:static;
+        width: 100%;
+        background-color: inherit;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #profpic{
+        width: 100%;
+        margin: 0px;
+        float: none;
+        justify-content: center;
+    }
+
+    .Table_Wrapper{
+        flex-wrap: wrap;
+        display:block;
+    }
+    
+    .table-l{
+        width:100%;
+        margin:0px
+    }
+    .table-r{
+        width:100%;
+        margin: 0px
+    }
+    .Portfolio_Pic{
+        width:100%
+    }
+
+    .Portfolio_Label{
+        padding-top: 2.5%;
+        padding-bottom:2.5%;
+        bottom: 100px;
+    }    
+}
