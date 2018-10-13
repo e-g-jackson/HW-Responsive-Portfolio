@@ -17,6 +17,10 @@ p {
     margin-left: 19px;
 }
 
+tr{
+    display: table-row;
+}
+
 footer{
     background-color: #666666;
     color: #ffffff;
@@ -100,6 +104,7 @@ table{
 }
 
 .table-r{
+    display: table-cell;
     float:right;
     width:40%;
     margin-right: 5%;
@@ -107,6 +112,7 @@ table{
 }
 
 .table-l{
+    display: table-cell;
     float:left;
     width:40%;
     margin-right: 2.5%;
@@ -151,6 +157,11 @@ table{
     height: 25%;
     width: 25%;
     float: left;
+}
+
+#batmanGame {
+    padding-bottom: 40px;
+    background-color: black;
 }
 
 a:link{
